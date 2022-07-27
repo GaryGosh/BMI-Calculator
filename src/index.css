@@ -1,0 +1,84 @@
+.main-div{
+    background-color:white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    
+}
+.nav-bmi{
+    background-color:#15141b;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-family:monospace;
+    height: 5rem;
+}
+.bmi-form{
+    margin-top: 50px;
+    padding: 10px;
+    height: 185px;
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    box-shadow: 0px 5px 25px -15px black;
+}
+.bmi-button{
+    color: rgb(255, 255, 255);
+    background-color:rgb(0, 0, 0);
+    border: none;
+    opacity: 1;
+}
+.bmi-button:hover{
+   
+    background-color:black;
+    opacity:0.8;
+    
+}
+.bmi-score{
+    padding: 10px;
+    margin-top: 2%;
+    height: 280px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0px 5px 20px -10px rgb(0, 0, 0);
+}
+.bmi{
+    font-weight:bolder;
+    font-size: 30px;
+    background-color:rgb(223, 254, 255);
+    width: 80%;
+    height: 120px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.show-bmi{
+    color: rgb(3, 148, 145);
+    font-size: large;
+    font-family: fantasy;
+    margin-top: 2rem;
+}
+.alert{
+    color: red;
+    justify-content: center;
+    display: flex;
+    align-items: center;   
+}
+.bmi_list{
+
+    margin-top: 2%;
+    height: 285px;
+    width: 520px;
+    box-shadow: 0px 5px 25px -15px black;
+   
+}
+.table-row{
+    background-color: rgb(94, 255, 0);
+}
