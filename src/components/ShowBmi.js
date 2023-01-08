@@ -1,7 +1,7 @@
 import React from 'react'
 import List from './List'
 
-function ShowBmi({bmiScore}) {
+function ShowBmi({bmiScore ,data}) {
 
   const checkForBmi = () => {
     if(bmiScore < 18.5) {
@@ -16,23 +16,24 @@ function ShowBmi({bmiScore}) {
       return '';
     }
   }
-
- 
-
-
+const {name ,age } = data
   return (
     <>
+
     <div className='bmi-score'>
-      
+ 
       <div className='show-bmi'>
-       Your BMI  SCORE  : {bmiScore}
+     <span className='bmiName'>  {name} </span> -
+        BMI  SCORE  : {bmiScore}
       </div>
       <div className='bmi-class'>
           Your bmi status 
       </div>
         <div className='bmi'>
            {checkForBmi()}
+           
         </div>
+      
         
       </div>
 
