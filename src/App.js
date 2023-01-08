@@ -29,17 +29,22 @@ function App() {
 
         <div className='top'>
           <Form getdata={bmiValues} />
-          <div className='progressBar' style={{ width: 250, height: 200 }}>
+         <div className='prog-desc'>
+         <div className='progressBar' style={{ width: 200, height: 200 }}>
             <h2 className='progHeader'>Health Risk</h2>
             <CircularProgressbar
-              value={bmi < 18.5 ? 80 : bmi > 24.9 ? 85 : 25}
-              text={bmi < 18.5 ? 'high' : bmi > 24.9 ? 'high' : 'normal'}
-              strokeWidth={8}
+             value={bmi < 18.5 ? 80 : bmi > 24.9 ? 85: 10}
+             text={bmi < 18.5 ? 'High' :bmi > 24.9 ? 'High': 'Null' }
               background
               backgroundPadding={6}
             />
-            {/* <CircularProgressbar value={bmi < 18.5 ? 80 : bmi >24.9  ? 85 : 25} text={bmi < 18.5 ? 'high' : bmi >24.9 ? 'high' : 'normal'}  /> */}
+           
+              {/* <CircularProgressbar value={bmi < 18.5 ? 80 : bmi >24.9  ? 85 : 25} text={bmi < 18.5 ? 'high' : bmi >24.9 ? 'high' : 'normal'}  /> */}
           </div>
+          <div className='progDesc'>
+            {bmi < 18.5 ? 'Advice : Eating at least 5 portions of a variety of fruit and vegetables every day reduces the risk' : bmi > 24.9 ? 'Advice :Eat a healty ,reduced-calorie diet and exercise regularly reduces the risk' : ''}
+            </div>
+         </div>
         </div>
         <ShowBmi bmiScore={bmi} data={data} />
       </div>
