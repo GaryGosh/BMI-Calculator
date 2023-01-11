@@ -32,7 +32,7 @@ function App() {
               <h2 className="progHeader">Health Risk</h2>
               <CircularProgressbar
                 value={bmi < 18.5 ? 80 : bmi > 24.9 ? 85 : 10}
-                text={bmi < 18.5 ? "High" : bmi > 24.9 ? "High" : "Null"}
+                text={bmi < 18.5 ? "High" : bmi > 24.9 ? "High" : "Normal"}
                 background
                 backgroundPadding={6}
               />
@@ -46,6 +46,14 @@ function App() {
                 ? "Advice :Eat a healty ,reduced-calorie diet and exercise regularly reduces the risk"
                 : ""}
             </div>
+            {/* uncomment the below div and add your tip based on the bmi */}
+            {/* <div className="progDesc">
+              {bmi < 18.5
+                ? "Tip : Run man run"
+                : bmi > 24.9
+                ? "tip : eat chicken mutton pulav !"
+                : ""}
+            </div> */}
           </div>
         </div>
         <ShowBmi bmiScore={bmi} data={data} />
